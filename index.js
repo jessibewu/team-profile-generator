@@ -92,7 +92,7 @@ async function prompt() {
                     }, ]);
 
                     // Add to team Array
-                    const engineer = new Engineer(response.name, response.id, response.email, response2.x);
+                    const engineer = new Engineer(response.name, response.id, response.email, response2.data);
                     teamArray.push(engineer);
 
                } else if (response.role === "Intern") {
@@ -106,7 +106,7 @@ async function prompt() {
                     }, ]);
 
                     // Add to team Array
-                    const intern = new Intern(response.name, response.id, response.email, response2.x);
+                    const intern = new Intern(response.name, response.id, response.email, response2.data);
                     teamArray.push(intern);
 
                } else if (response.role === "Manager") {

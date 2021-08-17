@@ -35,7 +35,7 @@ const generateCard = function (arr) {
 
     // Font-awesome Icons change based on role
     let icon;
-    // Criteria for display
+    // Display criteria:
     let role;
 
     if (arr.title === "Manager") {
