@@ -91,9 +91,9 @@ async function prompt() {
                         },
                     }, ]);
 
-                    // Add to team Array
-                    const engineer = new Engineer(response.name, response.id, response.email, response2.data);
-                    teamArray.push(engineer);
+                // Add to team Array
+                const engineer = new Engineer(response.name, response.id, response.email, response2.data);
+                teamArray.push(engineer);
 
                } else if (response.role === "Intern") {
                     response2 = await inquirer.prompt([{
@@ -105,9 +105,9 @@ async function prompt() {
                         },
                     }, ]);
 
-                    // Add to team Array
-                    const intern = new Intern(response.name, response.id, response.email, response2.data);
-                    teamArray.push(intern);
+                // Add to team Array
+                const intern = new Intern(response.name, response.id, response.email, response2.data);
+                teamArray.push(intern);
 
                } else if (response.role === "Manager") {
                     response2 = await inquirer.prompt([{
@@ -119,9 +119,9 @@ async function prompt() {
                         },
                     }, ]);
 
-                    // Add to team Array
-                    const manager = new Manager(response.name, response.id, response.email, response2.data);
-                    teamArray.push(manager);
+                // Add to team Array
+                const manager = new Manager(response.name, response.id, response.email, response2.data);
+                teamArray.push(manager);
                }
 
         } catch (err) {
