@@ -43,7 +43,7 @@ const generateCard = function (arr) {
         role = `Office Number: ${arr.officeNumber}`
     } else if (arr.title === "Engineer") {
         icon = `<i class="fas fa-glasses"></i>`
-        role = `GitHub: <a href="https://github.com/${arr.github} target="_blank">${arr.github}</a>`
+        role = `GitHub: <a href="https://github.com/${arr.github}" target="_blank">${arr.github}</a>`
     } else if (arr.title === "Intern") {
         icon = `<i class="fas fa-user-graduate"></i>`
         role = `School: ${arr.school}`
