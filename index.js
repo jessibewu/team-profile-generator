@@ -29,7 +29,7 @@ async function main() {
         writeFileAsync("./dist/index.html", finalHtml);
 
         console.clear();
-        console.log("index.html file created successfully");
+        console.log("index.html file has been created successfully!");
 
     } catch (err) {
         return console.log(err);
@@ -47,24 +47,24 @@ async function prompt() {
                     type: "input",
                     name: "name",
                     message: "What is the employee's name? (Required)",
-                    validate: function validateName(name){
-                        return name !== '';
+                    validate: function validateName(input){
+                        return input !== '';
                     }
                 },
                 {
                     type: "input",
                     name: "id",
                     message: "Enter the employee's ID. (Required)",
-                    validate: function validateName(name){
-                        return name !== '';
+                    validate: function validateName(input){
+                        return input !== '';
                     }
                 },
                 {
                     type: "input",
                     name: "email",
                     message: "Enter the employee's email address. (Required)",
-                    validate: function validateEmail(name){
-                        return name !== '';
+                    validate: function validateEmail(input){
+                        return input !== '';
                     }
                 },
                 {
@@ -85,9 +85,9 @@ async function prompt() {
                     response2 = await inquirer.prompt([{
                          type: "input",
                          name: "data",
-                         message: "What is the employee's github username?",
-                         validate: function validateName(name){
-                            return name !== '';
+                         message: "What is the employee's github username? (Required)",
+                         validate: function validateName(input){
+                            return input !== '';
                         },
                     }, ]);
 
@@ -99,9 +99,9 @@ async function prompt() {
                     response2 = await inquirer.prompt([{
                          type: "input",
                          name: "data",
-                         message: "What school is the employee attending?",
-                         validate: function validateName(name){
-                            return name !== '';
+                         message: "What school is the employee attending? (Required)",
+                         validate: function validateName(input){
+                            return input !== '';
                         },
                     }, ]);
 
@@ -113,9 +113,9 @@ async function prompt() {
                     response2 = await inquirer.prompt([{
                          type: "input",
                          name: "data",
-                         message: "What is the employee's office number?",
-                         validate: function validateName(name){
-                            return name !== '';
+                         message: "What is the employee's office number? (Required)",
+                         validate: function validateName(input){
+                            return input !== '';
                         },
                     }, ]);
 
