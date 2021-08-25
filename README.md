@@ -39,7 +39,7 @@
 
   Demo Video:
 
-  ![Team Profile Generator Demo](./public/assets/demo-video.gif)
+  ![Team Profile Generator Demo](./src/demo-video.gif)
   
   ## Test
   Run "npm test" command at the root of the file to test files from __test__ folder.
